@@ -19,6 +19,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,7 +52,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Users/asaha/Desktop/Java_Fellowship_242/Cab_Invoice_Genrator/src/main/java"
+    "last_directory_selection": "C:/Users/asaha/Desktop/Java_Fellowship_242/Cab_Invoice_Genrator/src/main/java/org/invoice"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -50,7 +60,7 @@
       <recent name="org.invoice" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare">
+  <component name="RunManager" selected="Gradle.InvoiceServiceTest.givenMultipleRide_ShouldReturnInvoiceSummary">
     <configuration name="InvoiceServiceTest.givenDistanceAndTime_ShouldReturnTotalFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,8 +107,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="InvoiceServiceTest.givenMultipleRide_ShouldReturnInvoiceSummary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.invoice.InvoiceServiceTest.givenMultipleRide_ShouldReturnInvoiceSummary&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InvoiceServiceTest.givenMultipleRide_ShouldReturnInvoiceSummary" />
         <item itemvalue="Gradle.InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare" />
         <item itemvalue="Gradle.InvoiceServiceTest.givenDistanceAndTime_ShouldReturnTotalFare" />
       </list>
