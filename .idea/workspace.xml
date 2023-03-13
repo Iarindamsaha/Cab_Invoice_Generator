@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d1c99e5-0678-4081-9df4-14bf2c7c6f7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/invoice/InvoiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/invoice/InvoiceServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <recent name="org.invoice" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare">
     <configuration name="InvoiceServiceTest.givenDistanceAndTime_ShouldReturnTotalFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -73,8 +74,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.invoice.InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InvoiceServiceTest.givenLessDistanceOrTime_ShouldReturnMinimumFare" />
         <item itemvalue="Gradle.InvoiceServiceTest.givenDistanceAndTime_ShouldReturnTotalFare" />
       </list>
     </recent_temporary>
