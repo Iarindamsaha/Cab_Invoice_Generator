@@ -2,33 +2,58 @@ package org.invoice;
 
 public class InvoiceGenerator {
 
-    private static final double MINIMUM_COST_PER_KM = 10.0;
-    private static final int COST_PER_TIME = 1;
-    private static final double MINIMUM_FARE = 5.0;
+    double MINIMUM_COST_PER_KM;
+    int COST_PER_TIME;
+    double MINIMUM_FARE;
 
-    public double calculateFare(double distance, int time) {
+    public double calculateFare(double distance,int time,Ride.RideType rideType) {
 
-        double totalFare = distance * MINIMUM_COST_PER_KM + time * COST_PER_TIME;
 
-        if ( totalFare < MINIMUM_FARE){
+                if(rideType == Ride.RideType.NORMAL) {
+                    MINIMUM_COST_PER_KM = 10;
+                    COST_PER_TIME = 1;
+                    MINIMUM_FARE = 5;
 
-            return MINIMUM_FARE;
+                } else {
+                    MINIMUM_COST_PER_KM = 15;
+                    COST_PER_TIME = 2;
+                    MINIMUM_FARE = 20;
+                }
 
-        }
+                double totalFare = distance * MINIMUM_COST_PER_KM + time * COST_PER_TIME;
+
+                if( totalFare < MINIMUM_FARE) {
+                    totalFare = MINIMUM_FARE;
+                }
 
         return totalFare;
-
     }
 
-    public InvoiceSummary calculateFare(Ride[] rides) {
+    public double calculateFare(Ride[] rides, Ride.RideType rideType, String userName) {
 
+        UserId user = new UserId("Arindam");
+        boolean update = userName.equals(user.getUser());
         double totalFare = 0.0;
 
-        for (Ride ride : rides){
+        try{
+            if (!update){
+                throw new UserIdException ("--Invalid User Id---");
+            }
+            else{
+                for (Ride ride : rides){
 
-            totalFare += this.calculateFare (ride.distance, ride.time);
+                    totalFare += this.calculateFare (ride.distance, ride.time, rideType);
+
+                }
+
+
+            }
 
         }
-        return new InvoiceSummary(rides.length, totalFare);
+        catch (UserIdException e){
+            System.out.println(e.getMessage());
+        }
+        return totalFare;
     }
+
 }

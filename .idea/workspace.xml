@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d1c99e5-0678-4081-9df4-14bf2c7c6f7c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/invoice/InvoiceSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/invoice/InvoiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/invoice/InvoiceServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,19 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Users/asaha/Desktop/Java_Fellowship_242/Cab_Invoice_Genrator/src/main/java/org/invoice"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/asaha/Desktop/Java_Fellowship_242/Cab_Invoice_Genrator/src/main/java/org/invoice&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.invoice" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.InvoiceServiceTest.givenMultipleRide_ShouldReturnInvoiceSummary">
+  <component name="RunManager">
     <configuration name="InvoiceServiceTest.givenDistanceAndTime_ShouldReturnTotalFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />

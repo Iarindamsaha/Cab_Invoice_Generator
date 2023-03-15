@@ -10,4 +10,8 @@ public class Ride {
         this.time = time;
 
     }
+
+    public enum RideType {
+        NORMAL,PREMIUM,RIDES
+    }
 }

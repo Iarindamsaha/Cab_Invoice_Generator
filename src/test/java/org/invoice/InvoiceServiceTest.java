@@ -8,7 +8,7 @@ public class InvoiceServiceTest {
 
     InvoiceGenerator invoiceGenerator = null;
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp() {
         invoiceGenerator = new InvoiceGenerator();
     }
 
@@ -19,7 +19,7 @@ public class InvoiceServiceTest {
 
         double distance =2.0;
         int time = 5;
-        double fare = invoiceGenerator.calculateFare(distance,time);
+        double fare = invoiceGenerator.calculateFare(distance,time, Ride.RideType.NORMAL);
         Assertions.assertEquals(25,fare,0.0);
 
     }
@@ -30,7 +30,7 @@ public class InvoiceServiceTest {
 
         double distance = 0.1;
         int time = 1;
-        double fare = invoiceGenerator.calculateFare(distance,time);
+        double fare = invoiceGenerator.calculateFare(distance,time, Ride.RideType.NORMAL);
         Assertions.assertEquals(5,fare,0.0); //delta is for remove extra point values
 
     }
@@ -41,11 +41,12 @@ public class InvoiceServiceTest {
     public void givenMultipleRide_ShouldReturnInvoiceSummary(){
 
         Ride[] rides = { new Ride(2.0, 5),
-                         new Ride(0.1, 1)};
+                         new Ride(0.1, 1),
+                         new Ride(3.0,3)};
 
-        InvoiceSummary summary  = invoiceGenerator.calculateFare(rides);
-        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 30.0);
-        Assertions.assertEquals(expectedInvoiceSummary, summary);
+        double fare  = invoiceGenerator.calculateFare(rides, Ride.RideType.PREMIUM,"Arindam");
+        double expected = 111.0;
+        Assertions.assertEquals(expected,fare);
 
     }
 
